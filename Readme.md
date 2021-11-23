@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Vitalii Synchuk](https://up.htmlacademy.ru/adaptive/24/user/1868559).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Оксанич](https://up.htmlacademy.ru/profession/frontender/12/adaptive/user/240096).
 
 ---
 
