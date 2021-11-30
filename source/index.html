@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="page"lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon.png">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page__body">
+  <body class="body">
     <header class="page-header">
       <a class="page-header__logo">
         <svg class="page-header__logo-image" aria-hidden="true" focusable="false" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@
         <button class="main-navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-navigation__wrapper">
           <ul class="navigation-list">
             <li class="navigation-list__item">
               <a href="#">
@@ -62,19 +62,19 @@
                 Скачать приложение
               </a>
               <ul class="advertisement__list">
-                <li class="advertisemet__item">
+                <li class="advertisement__item">
                   <a href="#" class="advertisement__link">
                     <!-- иконку добавлю через стили -->
                     <span class="visually-hidden">AppStore</span>
                   </a>
                 </li>
-                <li class="advertisemet__item">
+                <li class="advertisement__item">
                   <a href="#" class="advertisement__link">
                     <!-- иконку добавлю через стили -->
                     <span class="visually-hidden">Google Play</span>
                   </a>
                 </li>
-                <li class="advertisemet__item">
+                <li class="advertisement__item">
                   <a href="#" class="advertisement__link">
                     <!-- иконку добавлю через стили -->
                     <span class="visually-hidden">Windows Market</span>
@@ -98,22 +98,22 @@
                 предложить!</h2>
             </header>
             <ul class="features__list">
-              <li class="features__item mood">
-                <h3 class="features__item__title">Поднимает настроение</h3>
-                <span class="features__item__description">Приложение позволит вам
+              <li class="features__item">
+                <h3 class="features__item-title">Поднимает настроение</h3>
+                <span class="features__item-description">Приложение позволит вам
                    победить осеннюю хандру
                    и депрессию буквально
                    в несколько кликов!</span>
               </li>
-              <li class="features__item changes">
-                <h3 class="features__item__title">Меняет мир вокруг</h3>
-                <span class="features__item__description">Сделайте снимок и украсьте его
+              <li class="features__item">
+                <h3 class="features__item-title">Меняет мир вокруг</h3>
+                <span class="features__item-description">Сделайте снимок и украсьте его
                    смайликом или текстовой подписью,
                    чтобы усилить эффект</span>
               </li>
-              <li class="features__item friends">
-                <h3 class="features__item__title">Заводит новых друзей</h3>
-                <span class="features__item__description">Ставьте лайки, комментируйте,
+              <li class="features__item">
+                <h3 class="features__item-title">Заводит новых друзей</h3>
+                <span class="features__item-description">Ставьте лайки, комментируйте,
                    делитесь фотографиями с друзьями и
                     заводите новых</span>
               </li>
@@ -152,14 +152,14 @@
               <button class="reviews__prev" type="button">Предыдущий отзыв</button>
               <button class="reviews__next" type="button">Следующий отзыв</button>
             </div>
-            <p class="reviews__toggles slider_toggles">
-              <button class="slider_toggle" type="button">
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle" type="button">
                 1
               </button>
-              <button class="slider_toggle" type="button">
+              <button class="slider__toggle" type="button">
                 2
               </button>
-              <button class="slider_toggle" type="button">
+              <button class="slider__toggle" type="button">
                 3
               </button>
             </p>
@@ -168,40 +168,40 @@
         <section class="commercial">
           <div class="commercial__wrapper">
             <h2 class="visually-hidden">Тарифы приложения</h2>
-            <table class="comercial__table">
-              <tr class="comercial__row">
-                <th class="comercial__data">ФУНКЦИИ</th>
-                <th class="comercial__data">БАЗА 1,99 USD</th>
-                <th class="comercial__data">СТАНДАРТ 3,99 USD</th>
-                <th class="comercial__data">АНЛИМ 9,99 USD</th>
+            <table class="commercial__table">
+              <tr class="commercial__row">
+                <th class="commercial__data">ФУНКЦИИ</th>
+                <th class="commercial__data">БАЗА 1,99 USD</th>
+                <th class="commercial__data">СТАНДАРТ 3,99 USD</th>
+                <th class="commercial__data">АНЛИМ 9,99 USD</th>
               </tr>
-              <tr class="comercial__row">
-                <td class="comercial__data">Розовый фильтр</td>
-                <td class="comercial__data">YES</td>
-                <td class="comercial__data">YES</td>
-                <td class="comercial__data">YES</td>
+              <tr class="commercial__row">
+                <td class="commercial__data">Розовый фильтр</td>
+                <td class="commercial__data">YES</td>
+                <td class="commercial__data">YES</td>
+                <td class="commercial__data">YES</td>
               </tr>
-              <tr class="comercial__row">
-                <td class="comercial__data">Смайлики</td>
-                <td class="comercial__data">NO</td>
-                <td class="comercial__data">YES</td>
-                <td class="comercial__data">YES</td>
+              <tr class="commercial__row">
+                <td class="commercial__data">Смайлики</td>
+                <td class="commercial__data">NO</td>
+                <td class="commercial__data">YES</td>
+                <td class="commercial__data">YES</td>
               </tr>
-              <tr class="comercial__row">
-                <td class="comercial__data">Комментарии</td>
-                <td class="comercial__data">NO</td>
-                <td class="comercial__data">NO</td>
-                <td class="comercial__data">YES</td>
+              <tr class="commercial__row">
+                <td class="commercial__data">Комментарии</td>
+                <td class="commercial__data">NO</td>
+                <td class="commercial__data">NO</td>
+                <td class="commercial__data">YES</td>
               </tr>
             </table>
-            <p class="reviews__toggles slider_toggles">
-              <button class="slider_toggle" type="button">
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle" type="button">
                 1
               </button>
-              <button class="slider_toggle" type="button">
+              <button class="slider__toggle" type="button">
                 2
               </button>
-              <button class="slider_toggle" type="button">
+              <button class="slider__toggle" type="button">
                 3
               </button>
             </p>
@@ -211,19 +211,19 @@
           <div class="communication__wrapper">
             <h2 class="communication__title">Остались вопросы?
               Свяжитесь с нами!</h2>
-            <div class="communication__phone phone">
-              <h3 class="phone__title">Звоните:</h3>
-              <a class="phone__number" href="tel:+7(812)5556666">
+            <div class="communication__item">
+              <h3 class="communication__item-title">Звоните:</h3>
+              <a class="communication__item-content" href="tel:+7(812)5556666">
                 +7 (812) 555-66-66</a>
             </div>
-            <div class="communication__email email">
-              <h3 class="email__title">Пишите:</h3>
-              <a class="email__adress" href="mail@htmlacademy.ru">
+            <div class="communication__item">
+              <h3 class="communication__item-title">Пишите:</h3>
+              <a class="communication__item-content" href="mail@htmlacademy.ru">
                 mail@htmlacademy.ru</a>
             </div>
-            <div class="communication__adress adress">
-              <h3 class="adress__title">Приезжайте в гости:</h3>
-              <a class="adress__street" href="#">ул. Большая Конюшенная, 19/8</a>
+            <div class="communication__item">
+              <h3 class="communication__item-title">Приезжайте в гости:</h3>
+              <a class="communication__item-content" href="#">ул. Большая Конюшенная, 19/8</a>
             </div>
             <img class="communication__map" src="" alt="Место нахождения">
           </div>
