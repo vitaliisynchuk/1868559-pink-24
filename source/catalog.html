@@ -31,12 +31,12 @@
               </a>
             </li>
             <li class="navigation-list__item">
-              <a href="catalog.html">
+              <a href="#">
                 Фотографии
               </a>
             </li>
             <li class="navigation-list__item navigation-list__item--current">
-              <a href="#">
+              <a href="form.html">
                 Конкурс
               </a>
             </li>
@@ -50,101 +50,128 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Конкурс</h1>
-      <section class="filter">
-        <div class="filter__wrapper">
-          <header class="filter__header">
-            <h2 class="filter__title">Конкурс на самое безбашенное
-              путешествие с Пинк</h2>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <header class="catalog__header">
+            <h1 class="catalog__title">Фотографии пользователей</h1>
           </header>
-          <p class="filter__text">Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту!
+          <p class="catalog__text top">
+            Взгляните на фотографии, которые выкладывают пользователи!
+             Видите, как не хватает ваших?
           </p>
-          <form class="filter__form" name="filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter__fieldset">
-              <label class="filter__lable">
-                <span class="filter__span">ФАМИЛИЯ:</span>
-                <input class="filter__input" type="text" name="lastname" value="Укажите фамилию *" required>
-              </label>
-              <label class="filter__lable">
-                <span class="filter__span">ИМЯ:</span>
-                <input class="filter__input" type="text" name="firstname" value="Введите ваше имя *" required>
-              </label>
-              <label class="filter__lable">
-                <span class="filter__span">ОТЧЕСТВО:</span>
-                <input class="filter__input" type="text" name="patronymic" value="Ну и отчество тоже">
-              </label>
-            </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">Ваши безбашенные
-                достижения в путешествии</legend>
-              <label class="filter__lable">
-                <input class="filter__input" type="checkbox" name="achievements" checked>
-                <span>Сделал селфи с акулой</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="checkbox" name="achievements" checked>
-                <span>Обгорел на пляже</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="checkbox" name="achievements">
-                <span>Видел Чака Норриса</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="checkbox" name="achievements">
-                <span>Накупил сувениров</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="checkbox" name="achievements" checked>
-                <span>Удержал башню</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="checkbox" name="achievements">
-                <span>Разгромил отель</span>
-              </label>
-            </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
-              <label class="filter__lable">
-                <span class="filter__span">НОМЕР ТЕЛЕФОНА</span>
-                <input class="filter__input" type="text" name="phone" value="Номер, пожалуйста" required>
-              </label>
-              <label class="filter__lable">
-                <span class="filter__span">АДРЕС ПОЧТЫ</span>
-                <input class="filter__input" type="text" name="email" value="Введите почту *" required>
-              </label>
-            </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">С каким приложением
-                путешествовали?</legend>
-              <label class="filter__lable">
-                <input class="filter__input" type="radio" name="iOS" checked>
-                <span>Pink для iOS</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="radio" name="Android">
-                <span>Pink на Android</span>
-              </label>
-              <label class="filter__lable">
-                <input class="filter__input" type="radio" name="Windows">
-                <span>Windows Phone</span>
-              </label>
-            </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-              <label class="filter__lable">
-                <input class="filter__input" type="text" name="commentary"
-                value="Можно прям в красках, не стесняясь в выражениях" required>
-              </label>
-            </fieldset>
-            <button class="button" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+          <div class="catalog__post post post--current">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Анна</span>
+            <span class="post__date">(5 минут назад)</span>
+            <span class="post__content">
+              Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!
+            </span>
+            <span class="post__like">Нравится: 215</span>
+          </div>
+          <div class="catalog__post post">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Левон</span>
+            <span class="post__date">(5 часов назад)</span>
+            <span class="post__content">Вчера он на луну летал,
+              сегодня в руки к нам попал.
+            </span>
+            <span class="post__like">Нравится: 356</span>
+          </div>
+          <div class="catalog__post post">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Антон</span>
+            <span class="post__date">(12 часов назад)</span>
+            <span class="post__content">Соседи будут рады!</span>
+            <span class="post__like">Нравится: 666</span>
+          </div>
+          <div class="catalog__post post">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Борис</span>
+            <span class="post__date">(20 часов назад)</span>
+            <span class="post__content">Здесь могла быть ваша цитата
+              о высоком и вечном.
+            </span>
+            <span class="post__like">Нравится: 215</span>
+          </div>
+          <div class="catalog__post post">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Сергей</span>
+            <span class="post__date">(25 часов назад)</span>
+            <span class="post__content">Самая кубанская в мире!</span>
+            <span class="post__like">Нравится: 4</span>
+          </div>
+          <div class="catalog__post post">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Максим</span>
+            <span class="post__date">(40 часов назад)</span>
+            <span class="post__content">Где снег-то?</span>
+            <span class="post__like">Нравится: 150</span>
+          </div>
+          <div class="catalog__post post">
+            <img class="post__image" src="#" alt="">
+            <span class="post__user-name">Надежда</span>
+            <span class="post__date">(45 часов назад)</span>
+            <span class="post__content">Всем GM и взаимные лайки!</span>
+            <span class="post__like">Нравится: 2560</span>
+          </div>
+          <p class="catalog__text bottom">Затмите их всех!
+            Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+      </section>
+      <section class="posting">
+        <div class="posting__wrapper">
+          <h2 class="visually-hidden">Запости свою фотографию</h2>
+          <form class="posting__form">
+            <img class="posting__image" src="#" alt="">
+            <div class="posting__edit">
+              <div class="edit">
+                <label class="edit__lable">
+                  <span class="visually-hidden">Обрезка фотографии</span>
+                  <input class="edit__input" type="number" name="cut-level">
+                </label>
+                <div class="range">
+                  <div class="range__bar">
+                    <button class="range__toggle" type="button">
+                      <span class="visually-hidden">Изменить уровень обрезки.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="edit">
+                <label class="edit__lable">
+                  <span class="visually-hidden">Наполнение фотографии</span>
+                  <input class="edit__input" type="number" name="cut-level">
+                </label>
+                <div class="range">
+                  <div class="range__bar">
+                    <button class="range__toggle" type="button">
+                      <span class="visually-hidden">Изменить уровень наполнения.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="edit">
+                <label class="edit__lable">
+                  <span class="visually-hidden">Контраст фотографии</span>
+                  <input class="edit__input" type="number" name="cut-level">
+                </label>
+                <div class="range">
+                  <div class="range__bar">
+                    <button class="range__toggle" type="button">
+                      <span class="visually-hidden">Изменить уровень контраста.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="posting__buttoms">
+                <button class="posting__button" type="button">Запостить</button>
+                <button class="posting__button" type="button">Отмена</button>
+              </div>
+            </div>
           </form>
-          <p class="filter__legend">
-            <small>
-              * — обязательные поля
-            </small>
-          </p>
         </div>
       </section>
     </main>
@@ -221,4 +248,3 @@
     </footer>
   </body>
 </html>
-
