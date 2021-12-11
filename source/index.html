@@ -2,101 +2,104 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="body">
-    <header class="header">
-      <a class="header__logo">
-        <svg class="header__logo-image" aria-hidden="true" focusable="false" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1
-          1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6
-          1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28
-          1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0
-          1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28
-          1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95
-          7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27
-          1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/>
-        </svg>
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-navigation__wrapper">
-          <ul class="navigation-list">
-            <li class="navigation-list__item">
-              <a href="#">
-                Главная
-              </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">
-                Фотографии
-              </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">
-                Конкурс
-              </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <h1 class="visually-hidden">Пинк - улучши своё настроение</h1>
-        <section class="advertisement">
-          <div class="advertisement__wrapper">
-            <header class="advertisement__header">
-              <h2 class="advertisement__title">Взгляните на жизнь<br>
-                иначе!</h2>
-            </header>
-            <div class="advertisement__apps">
-              <a href="#" class="advertisement__button">
-                Скачать приложение
-              </a>
-              <ul class="advertisement__list">
-                <li class="advertisement__item">
-                  <a href="#" class="advertisement__link">
-                    <!-- иконку добавлю через стили -->
-                    <span class="visually-hidden">AppStore</span>
-                  </a>
-                </li>
-                <li class="advertisement__item">
-                  <a href="#" class="advertisement__link">
-                    <!-- иконку добавлю через стили -->
-                    <span class="visually-hidden">Google Play</span>
-                  </a>
-                </li>
-                <li class="advertisement__item">
-                  <a href="#" class="advertisement__link">
-                    <!-- иконку добавлю через стили -->
-                    <span class="visually-hidden">Windows Market</span>
-                  </a>
-                </li>
-              </ul>
-              <p class="advertisement__legend">
-                <small>
-                  Доступно для iPhone, iPad, Android, Windows Phone,
-                  OS X, Windows 8
-                </small>
-              </p>
-            </div>
+    <div class="main-background-container">
+      <header class="header">
+        <a class="header__logo">
+           <svg class="header__logo-image" aria-hidden="true" focusable="false" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1
+            1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6
+            1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28
+            1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0
+            1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28
+            1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95
+            7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27
+            1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/>
+          </svg>
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-navigation__wrapper">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
+        </nav>
+      </header>
+      <main class="main">
+        <h1 class="visually-hidden">Пинк - улучши своё настроение</h1>
+          <section class="advertisement">
+            <div class="advertisement__wrapper">
+              <header class="advertisement__header">
+                <h2 class="advertisement__title">Взгляните на жизнь<br>
+                  иначе!</h2>
+              </header>
+              <div class="advertisement__apps">
+                <a href="#" class="advertisement__button">
+                  Скачать приложение
+                </a>
+                <ul class="advertisement__list">
+                  <li class="advertisement__item">
+                    <a href="#" class="advertisement__link">
+                      <!-- иконку добавлю через стили -->
+                      <span class="visually-hidden">AppStore</span>
+                    </a>
+                  </li>
+                  <li class="advertisement__item">
+                    <a href="#" class="advertisement__link">
+                      <!-- иконку добавлю через стили -->
+                      <span class="visually-hidden">Google Play</span>
+                    </a>
+                  </li>
+                  <li class="advertisement__item">
+                    <a href="#" class="advertisement__link">
+                      <!-- иконку добавлю через стили -->
+                      <span class="visually-hidden">Windows Market</span>
+                    </a>
+                  </li>
+                </ul>
+                <p class="advertisement__legend">
+                  <small>
+                    Доступно для iPhone, iPad, Android, Windows Phone,
+                    OS X, Windows 8
+                  </small>
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
         <section class="features">
+          <header class="features__header">
+            <h2 class="features__title">Устали от серости мегаполиса?
+              Нам есть, что вам
+              предложить!</h2>
+          </header>
           <div class="features__wrapper">
-            <header class="features__header">
-              <h2 class="features__title">Устали от серости мегаполиса?
-                Нам есть, что вам
-                предложить!</h2>
-            </header>
             <ul class="features__list">
               <li class="features__item">
                 <h3 class="features__item-title">Поднимает настроение</h3>
@@ -146,13 +149,13 @@
                 </p>
                 <b class="reviews__author-name">Николай Петров</b>
                 <p class="reviews__author-decription">
-                  <small>25 лет, водитель трамвая</small>
+                  25 лет, водитель трамвая
                 </p>
               </blockquote>
               <button class="reviews__prev" type="button">Предыдущий отзыв</button>
               <button class="reviews__next" type="button">Следующий отзыв</button>
             </div>
-            <div class=" slider">
+            <div class="slider">
               <button class="slider__toggle" type="button">
                 1
               </button>
@@ -170,10 +173,21 @@
             <h2 class="visually-hidden">Тарифы приложения</h2>
             <table class="table">
               <tr class="table__row">
-                <th class="table__cell">ФУНКЦИИ</th>
-                <th class="table__cell">БАЗА 1,99 USD</th>
-                <th class="table__cell">СТАНДАРТ 3,99 USD</th>
-                <th class="table__cell">АНЛИМ 9,99 USD</th>
+                <th class="table__cell">
+                  <span class="table__cell-name">ФУНКЦИИ</span>
+                </th>
+                <th class="table__cell">
+                  <span class="table__cell-name">БАЗА</span>
+                  <span class="table__cell-price">1,99 USD</span>
+                </th>
+                <th class="table__cell">
+                  <span class="table__cell-name">СТАНДАРТ</span>
+                  <span class="table__cell-price">3,99 USD</span>
+                </th>
+                <th class="table__cell">
+                  <span class="table__cell-name">АНЛИМ</span>
+                  <span class="table__cell-price">9,99 USD</span>
+                </th>
               </tr>
               <tr class="table__row">
                 <td class="table__cell">Розовый фильтр</td>
