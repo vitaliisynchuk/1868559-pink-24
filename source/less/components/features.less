@@ -1,37 +1,118 @@
 .features__header {
   background-color: @primary-color;
-  padding-top: 77px;
-  padding-bottom: 72px;
-  padding-left: 210px;
-  padding-right: 210px;
+}
+
+.features__header__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+@media (min-width: @tablet-width) {
+  .features__header__wrapper {
+    margin: 0 auto;
+    width: 588px; 
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__header__wrapper {
+    margin: 0 auto;
+    width: 780px; 
+  }
 }
 
 .features__wrapper {
   background-color: @secondary-background-color;
-  padding-right: 195px;
-  padding-left: 184px;
-  padding-bottom: 59px;
 }
 
 .features__title {
-  font-weight: @h2-weight;
-  font-size: @h2-size;
-  line-height: @h2-height;
+  font-weight: @h2-mobile-weight;
+  font-size: @h2-mobile-size;
+  line-height: @h2-mobile-height;
+  margin: 0;
+}
+
+.features__title:first-child {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__title:first-child {
+    margin: 0;
+  }
 }
 
 .features__list {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    width: 310px
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    width: 940px;
+    display: flex;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .features__item {
+    justify-content: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__item {
+    justify-content: center;
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .features__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .features__item-title {
-  font-weight: @h3-weight;
-  font-size: @h3-size;
-  line-height: @h3-height;
+  font-weight: @h3-mobile-weight;
+  font-size: @h3-mobile-size;
+  line-height: @h3-mobile-height;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+@media (min-width: @desktop-width) {
+  .features__item-title {
+    padding-bottom: 35px;
+  }
 }
 
 .features__item-description {
-  font-size: @text-size;
-  line-height: @text-height;
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
   color: @text-color;
+  padding-bottom: 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__item-description {
+    padding-bottom: 47px;
+  }
 }

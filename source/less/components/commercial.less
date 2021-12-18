@@ -1,6 +1,15 @@
-.commercial__wrapper {
+.commercial {
   background-color: @secondary-background-color;
-  padding-right: 130px;
-  padding-left: 130px;
-  padding-bottom: 98px;
 }
+
+.commercial__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .commercial__wrapper {
+    width: 616px;
+  }
+}
+
