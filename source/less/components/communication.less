@@ -7,13 +7,6 @@
   margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
-  .communication__wrapper {
-    width: auto;
-    margin: 0 auto;
-  }
-}
-
 .communication__title {
   font-size: @h2-mobile-size;
   font-weight: @h2-mobile-weight;
@@ -22,38 +15,8 @@
   margin: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .communication__title {
-    margin: 0 auto;
-    width: 370px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .communication__title {
-    width: 462px;
-  }
-}
-
 .communication__list {
   padding: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .communication__list {
-    list-style: none;
-    padding: 0;
-    width: 544px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .communication__list {
-    width: 863px;
-  }
 }
 
 .communication__item {
@@ -61,26 +24,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-@media (min-width: @tablet-width) {
-  .communication__item {
-    width: 222px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .communication__item:first-child {
-    margin-right: 90px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .communication__item:first-child {
-    margin-right: auto;
-  }
-}
-
 
 .communication__item-title {
   font-weight: 700;
@@ -96,3 +39,64 @@
   line-height: 33px;
   color: @principal-red-color;
 }
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .communication__wrapper {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .communication__title {
+    margin: 0 auto;
+    width: 370px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .communication__list {
+    list-style: none;
+    padding: 0;
+    width: 544px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .communication__item {
+    width: 222px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .communication__item:first-child {
+    margin-right: 90px;
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .communication__title {
+    width: 462px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .communication__list {
+    width: 863px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .communication__item:first-child {
+    margin-right: auto;
+  }
+}
+

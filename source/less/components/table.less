@@ -2,21 +2,9 @@
   display: none;
 }
 
-@media (min-width: @tablet-width) {
-  .table {
-    display: flex;
-  }
-}
-
 .mobile-table {
   margin: 0 auto;
   width: 280px;
-}
-
-@media (min-width: @tablet-width) {
-  .mobile-table {
-    display: none;
-  }
 }
 
 .table__cell-name {
@@ -42,5 +30,19 @@
 .table__row {
   th {
     background-color: #283645;
+  }
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .table {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .mobile-table {
+    display: none;
   }
 }

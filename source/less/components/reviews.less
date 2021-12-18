@@ -7,18 +7,6 @@
   margin: 0 auto;
 }
 
-@media (min-width:@tablet-width) {
-  .reviews__wrapper {
-    width: 620px;
-  }
-}
-
-@media (min-width:@desktop-width) {
-  .reviews__wrapper {
-    width: 688px;
-  }
-}
-
 .reviews__list {
   list-style: none;
 }
@@ -54,15 +42,31 @@
   display: none;
 }
 
+.slider {
+  margin: 0 auto;
+  width: 80px;
+}
+
+// TABLET RULES
+
+@media (min-width:@tablet-width) {
+  .reviews__wrapper {
+    width: 620px;
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width:@desktop-width) {
+  .reviews__wrapper {
+    width: 688px;
+  }
+}
+
 @media (min-width:@desktop-width) {
   .reviews__buttons {
     display: flex;
     width: 270px;
     margin: 0 auto;
   }
-}
-
-.slider {
-  margin: 0 auto;
-  width: 80px;
 }
