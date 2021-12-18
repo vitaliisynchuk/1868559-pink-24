@@ -1,13 +1,71 @@
-.advertisement__wrapper {
-  margin-top: 114px;
-  padding-bottom: 130px;
+
+
+.advertisement__header {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advertisement__header {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advertisement__header {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.advertisement__apps {
+  background-color: #1D2631;
+}
+
+@media (min-width: @tablet-width) {
+  .advertisement__apps {
+    background: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advertisement__apps {
+    background: none;
+  }
+}
+
+.advertisement__apps__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .advertisement__apps__wrapper {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advertisement__apps__wrapper {
+    margin: 0 auto;
+    width: 300px;
+  }
 }
 
 .advertisement__title {
   color: @primary-color;
-  font-weight: @h2-weight;
-  font-size: @h2-size;
-  line-height: @h2-height;
+  font-weight: @h2-mobile-weight;
+  font-size: @h2-mobile-size;
+  line-height: @h2-mobile-height;
+  margin: 0;
 }
 
 .advertisement__button {
@@ -17,6 +75,7 @@
 }
 
 .advertisement__list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -30,7 +89,9 @@
 
 .advertisement__legend {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: @primary-color;
+  margin: 0;
+  justify-self: center;
 }

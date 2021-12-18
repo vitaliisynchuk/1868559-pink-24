@@ -1,6 +1,35 @@
 .footer {
   background-color: @primary-color;
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-bottom: 75px;
 }
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 172px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__wrapper {
+    width: 940px;
+  }
+}
+
+// .footer__social {
+  
+// }
+
+@media (min-width: @tablet-width) {
+  .footer__social {
+    margin: 0 auto;
+  }
+}
+
+

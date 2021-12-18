@@ -1,5 +1,16 @@
+.main-navigation {
+  margin-left: auto;
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__toogle {
+    display: none;
+  }
+}
+
 .navigation-list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -7,5 +18,6 @@
   text-decoration: none;
   color: @primary-color;
   font-size: 18px;
-  line-height: 18px;
+  font-weight: 700;
+  line-height: 32px;
 }

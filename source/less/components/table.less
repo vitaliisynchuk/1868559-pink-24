@@ -1,6 +1,27 @@
+.table {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .table {
+    display: flex;
+  }
+}
+
+.mobile-table {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .mobile-table {
+    display: none;
+  }
+}
+
 .table__cell-name {
-  font-size: @text-size;
-  line-height: @text-height;
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
   font-weight: 700;
   color: @primary-color;
 }
@@ -13,7 +34,13 @@
 }
 
 .table__cell {
-  font-size: @text-size;
-  line-height: @text-height;
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
   color: @text-color;
+}
+
+.table__row {
+  th {
+    background-color: #283645;
+  }
 }

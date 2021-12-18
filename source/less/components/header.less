@@ -1,4 +1,26 @@
 .header {
-  margin: 0 130px;
-  padding: 49px 0;
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+}
+
+.header__logo {
+  width: 74px;
 }
