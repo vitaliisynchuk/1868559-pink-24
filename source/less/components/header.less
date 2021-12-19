@@ -1,26 +1,34 @@
 .header {
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.header__wrapper {
   width: 250px;
   margin: 0 auto;
   display: flex;
 }
 
+.header__logo {
+  width: 74px;
+}
+
+// TABLET RULES
+
 @media (min-width: @tablet-width) {
-  .header {
+  .header__wrapper {
     width: 620px;
     margin: 0 auto;
     display: flex;
   }
 }
 
+// DESKTOP RULES
+
 @media (min-width: @desktop-width) {
-  .header {
+  .header__wrapper {
     width: 940px;
     margin: 0 auto;
     display: flex;
   }
-
-}
-
-.header__logo {
-  width: 74px;
 }

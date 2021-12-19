@@ -11,20 +11,6 @@
 
 }
 
-@media (min-width: @tablet-width) {
-  .features__header__wrapper {
-    margin: 0 auto;
-    width: 588px; 
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .features__header__wrapper {
-    margin: 0 auto;
-    width: 780px; 
-  }
-}
-
 .features__wrapper {
   background-color: @secondary-background-color;
 }
@@ -40,30 +26,11 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: @tablet-width) {
-  .features__title:first-child {
-    margin: 0;
-  }
-}
-
 .features__list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   width: 280px;
-}
-
-@media (min-width: @tablet-width) {
-  .features__list {
-    width: 310px
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .features__list {
-    width: 940px;
-    display: flex;
-  }
 }
 
 .features__item {
@@ -72,9 +39,67 @@
   justify-content: center;
 }
 
+.features__item-title {
+  font-weight: @h3-mobile-weight;
+  font-size: @h3-mobile-size;
+  line-height: @h3-mobile-height;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.features__item-description {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
+  color: @text-color;
+  padding-bottom: 43px;
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .features__header__wrapper {
+    margin: 0 auto;
+    width: 588px; 
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__title:first-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    width: 310px
+  }
+}
+
 @media (min-width: @tablet-width) {
   .features__item {
     justify-content: left;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__item-description {
+    padding-bottom: 47px;
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .features__header__wrapper {
+    margin: 0 auto;
+    width: 780px; 
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    width: 940px;
+    display: flex;
   }
 }
 
@@ -90,29 +115,8 @@
   }
 }
 
-.features__item-title {
-  font-weight: @h3-mobile-weight;
-  font-size: @h3-mobile-size;
-  line-height: @h3-mobile-height;
-  margin: 0;
-  padding-bottom: 24px;
-}
-
 @media (min-width: @desktop-width) {
   .features__item-title {
     padding-bottom: 35px;
-  }
-}
-
-.features__item-description {
-  font-size: @text-mobile-size;
-  line-height: @text-mobile-height;
-  color: @text-color;
-  padding-bottom: 43px;
-}
-
-@media (min-width: @tablet-width) {
-  .features__item-description {
-    padding-bottom: 47px;
   }
 }
