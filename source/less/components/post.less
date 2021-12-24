@@ -1,165 +1,123 @@
 .post {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 280px;
-    margin: 0 auto;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-.post--current { 
-    .post__image {
-        width: 320px;
-        height: 137px;
-    }
+.post--current {
+  .post__image {
+    width: 320px;
+    height: 137px;
+  }
 }
 
 .post__image {
-    width: 280px;
-    height: 180px;
+  width: 280px;
+  height: 180px;
 }
 
 .post__user-name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: @text-color;
-  }
-  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-color;
+}
+
 .post__date {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 24px;
-    color: @text-color;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: @text-color;
 }
-  
+
 .post__content {
-    font-size: 14px;
-    line-height: 24px;
-    color: @text-color;
-    width: 280px;
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-color;
+  width: 280px;
 }
-  
+
 .post__like {
-    font-size: 12px;
-    line-height: 24px;
-    color: @principal-red-color;
+  font-size: 12px;
+  line-height: 24px;
+  color: @principal-red-color;
 }
 
 // TABLET RULES
 
-@media(min-width: @tablet-width) {
-    .post {
-        width: 300px;
-    }
-}
+@media (min-width: @tablet-width) {
+  .post {
+    width: 300px;
+  }
 
-@media(min-width: @tablet-width) {
+  .post__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .post__content {
+    font-size: 14px;
+    line-height: 24px;
+    color: @text-color;
+    width: 300px;
+  }
+
+  .post--current {
+    width: 620px;
+
     .post__image {
-        width: 300px;
-        height: 300px;
+      width: 660px;
+      height: 509px;
     }
-}
 
-@media(min-width: @tablet-width) {
+    .post__user-name {
+      width: 40px;
+      order: 2;
+    }
+
+    .post__date {
+      order: 3;
+      width: 100px;
+      margin-right: 300px;
+    }
+
     .post__content {
-        font-size: 14px;
-        line-height: 24px;
-        color: @text-color;
-        width: 300px;
+      width: 520px;
+      order: 5;
     }
+
+    .post__like {
+      order: 4;
+      width: 90px;
+    }
+  }
 }
 
-@media(min-width: @tablet-width) {
-    .post--current {
-        width: 620px;
-    }
-}
+// DESKTOP RULES
 
-@media(min-width: @tablet-width) {
-    .post--current {
-        .post__image {
-            width: 660px;
-            height: 509px;
-        }
-    }
-}
+@media (min-width: @desktop-width) {
+  .post__image {
+    height: 400px;
+  }
 
-@media(min-width: @tablet-width) {
-    .post--current {
-        .post__user-name {
-            width: 40px;
-            order: 2;
-        }
-    }
-}
+  .post--current {
+    width: 940px;
 
-@media(min-width: @tablet-width) {
-    .post--current {
-        .post__date {
-            order: 3;
-            width: 100px;
-            margin-right: 300px;
-        }
-    }
-}
-
-@media(min-width: @tablet-width) {
-    .post--current {
-        .post__content {
-            width: 520px;
-            order: 5;
-        }
-    }
-}
-
-@media(min-width: @tablet-width) {
-    .post--current {
-        .post__like {
-            order: 4;
-            width: 90px;
-        }
-    }
-}
-
-// DESKTOP RULES 
-
-@media(min-width: @desktop-width) {
     .post__image {
-        height: 400px;
+      width: 1200px;
+      height: 506px;
     }
-}
 
-@media(min-width: @desktop-width) {
-    .post--current {
-        width: 940px
+    .post__date {
+      margin-right: 624px;
     }
-}
 
-@media(min-width: @desktop-width) {
-    .post--current {
-        .post__image {
-            width: 1200px;
-            height: 506px;
-        }
+    .post__content {
+      width: 874px;
+      order: 5;
     }
+  }
 }
-
-@media(min-width: @desktop-width) {
-    .post--current {
-        .post__date {
-            margin-right: 624px;
-        }
-    }
-}
-
-@media(min-width: @desktop-width) {
-    .post--current {
-        .post__content {
-            width: 874px;
-            order: 5;
-        }
-    }
-}
-
-
