@@ -1,4 +1,6 @@
 .filter__header {
+  width: 228px;
+  margin: 0 auto;
 }
 
 .filter__wrapper {
@@ -6,35 +8,236 @@
 }
 
 .filter__title {
-  font-weight: @h2-weight;
-  font-size: @h2-size;
-  line-height: @h2-height;
+  font-weight: @h2-mobile-weight;
+  font-size: @h2-mobile-size;
+  line-height: @h2-mobile-height;
   color: @primary-color;
+  text-align: center;
+  margin: 0;
 }
 
 .filter__text {
-  font-size: @text-size;
-  line-height: @text-height;
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
   color: @text-color;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.filter__fieldset {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__fieldset:nth-child(1), .filter__fieldset:nth-child(3) {
+  width: 276px;
+  justify-content: center;
+}
+
+.filter__fieldset:nth-child(2) {
+  width: 228px;
+  justify-content: left;
+}
+
+.filter__fieldset:nth-child(4) {
+  width: 176px;
+  justify-content: left;
+}
+
+.filter__fieldset:nth-child(5) {
+  width: 276px;
+  justify-content: center;
+
+  .filter__input {
+    height: 197px;
+    width: 276px;
+  }
 }
 
 .filter__span {
-  font-size: @text-size;
-  line-height: @text-height;
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
+  color: @text-color;
+  display: block;
+}
+
+.filter__legend {
+  font-size: @legend-mobile-size;
+  line-height: @legend-mobile-height;
+  color: @principal-red-color;
+  text-align: center;
+}
+
+.filter__input {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
   color: @text-color;
 }
 
 .filter__button {
+  width: 276px;
+  margin: 0 auto;
+  display: block;
 }
 
-.filter__legend {
-  font-size: @legend-size;
-  line-height: @legend-height;
-  color: @principal-red-color;
+// MOBILE RULES
+
+@media (min-width: @mobile-width) {
+  .filter__fieldset {
+    border: 0 none;
+  }
 }
 
-.filter__input {
-  font-size: @text-size;
-  line-height: @text-height;
-  color: @text-color;
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .filter__header {
+    width: 620px;
+  }
+
+  .filter__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter__fieldset {
+    width: 616px;
+  }
+
+  .filter__fieldset:nth-child(1) {
+    width: 650px;
+    justify-content: center;
+    order: 1;
+
+    .filter__input:nth-child(1), .filter__input:nth-child(3) {
+      width: 521px;
+    }
+
+    .filter__input:nth-child(2) {
+      width: 550px;
+    }
+  }
+
+  .filter__fieldset:nth-child(2) {
+    order: 4;
+    width: 616px;
+
+    .filter__lable {
+      width: 616px;
+    }
+
+  }
+
+  .filter__fieldset:nth-child(3) {
+    order: 3;
+    width: 616px;
+
+    .filter__lable {
+      width: 616px;
+    }
+  }
+
+  .filter__fieldset:nth-child(4) {
+    order: 2;
+    width: 616px;
+
+    .filter__lable {
+      width: 616px;
+    }
+  }
+
+  .filter__fieldset:nth-child(5) {
+    order: 5;
+    width: 616px;
+
+    .filter__input {
+      height: 189px;
+      width: 496px;
+    }
+  }
+
+  .filter__span {
+    display: inline;
+  }
+
+  .filter__button {
+    order: 6;
+    width: 296px;
+  }
+
 }
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .filter__header {
+    width: 747px;
+  }
+
+  .filter__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 936px;
+    margin: 0 auto;
+  }
+
+  .filter__fieldset:nth-child(1) {
+    width: 470px;
+    justify-content: center;
+    order: 1;
+
+    .filter__input:nth-child(1), .filter__input:nth-child(3) {
+      width: 340px;
+    }
+
+    .filter__input:nth-child(2) {
+      width: 380px;
+    }
+  }
+
+  .filter__fieldset:nth-child(2) {
+    order: 4;
+    width: 936px;
+
+    .filter__lable {
+      width: 257px;
+    }
+  }
+
+  .filter__fieldset:nth-child(3) {
+    order: 3;
+    width: 936px;
+
+    .filter__lable {
+      width: 371px;
+    }
+  }
+
+  .filter__fieldset:nth-child(4) {
+    order: 2;
+    width: 431px;
+
+    .filter__lable {
+      width: 431px;
+    }
+  }
+
+  .filter__fieldset:nth-child(5) {
+    order: 5;
+    width: 936px;
+
+    .filter__input {
+      height: 124px;
+      width: 816px;
+    }
+  }
+
+  .filter__text {
+    width: 756px;
+  }
+}
+
