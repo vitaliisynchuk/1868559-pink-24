@@ -5,4 +5,41 @@
     margin: 0;
     width: 172px;
     justify-content: center;
+    padding-bottom: 41px;
+}
+
+.social__item {
+  margin-right: 15px;
+
+  &--youtube {
+   margin-right: 0;
   }
+}
+
+.social__icon {
+  padding: 15px 13px;
+  border: 3px solid fade(#283645, 10%);
+  border-radius: 28px;
+  fill: @principal-red-color;
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    border: 3px solid fade(#283645, 10%);
+    fill: fade(@principal-red-color, 10%)
+  }
+
+  &--facebook {
+    padding: 13px 18px;
+  }
+}
+
+// TABLET RULES
+
+@media (min-width:@tablet-width) {
+  .social__list {
+    padding-bottom: 0;
+  }
+}

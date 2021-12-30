@@ -1,34 +1,152 @@
 .header {
-  background-color: #000000;
-  opacity: 0.3;
+  background-color: fade(#000000, 30%);
+}
+
+.header--opened {
+  background-color: #283645;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.header--closed .header__toogle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 23px;
+  width: 50px;
+  right: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.header--closed  {
+  .header__toogle:hover::before {
+    background-color: @principal-red-color;
+    box-shadow:
+    0 8px 0 0 @principal-red-color,
+    0 16px 0 0 @principal-red-color;
+  }
+
+  .header__toogle:active::before {
+    background-color: fade(@principal-red-color, 30%);
+    box-shadow:
+    0 8px 0 0 fade(@principal-red-color, 30%),
+    0 16px 0 0 fade(@principal-red-color, 30%);
+  }
+}
+
+.header--opened .header__toogle {
+  top: 0;
+  right: auto;
+  left: 0;
+  background-color: #283645;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 31px;
+    width: 23px;
+    right: 42px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @principal-red-color
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@principal-red-color, 30%);
+  }
 }
 
 .header__wrapper {
-  width: 250px;
-  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 66px;
 }
 
 .header__logo {
   width: 74px;
+  margin-right: auto;
+  fill: #ffffff;
+  margin-left: 20px;
+}
+
+.header__toogle {
+  display: block;
+  width: 70px;
+  height: 69px;
+  cursor: pointer;
+  border: none;
+  background-color:#00000000;;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
 }
 
 // TABLET RULES
 
 @media (min-width: @tablet-width) {
   .header__wrapper {
-    width: 620px;
-    margin: 0 auto;
     display: flex;
+    min-height: 110px;
+  }
+
+  .header__logo {
+    margin-left: 39px;
+  }
+
+  .header__toogle {
+    margin-right: 39px;
+  }
+
+  .header--closed .header__toogle::before {
+    right: 49px;
+    top: 45px;
+  }
+
+  .header--opened .header__toogle {
+    &::before,
+    &::after {
+      right: 61px;
+      top: 54px;
+    }
   }
 }
 
 // DESKTOP RULES
 
 @media (min-width: @desktop-width) {
-  .header__wrapper {
-    width: 940px;
-    margin: 0 auto;
+  .header {
     display: flex;
+  }
+
+  .header__logo {
+    margin-left: 130px;
+  }
+
+  // .header__wrapper {
+  //   width: 940px;
+  //   margin: 0 auto;
+  //   display: flex;
+  // }
+
+  .header__toogle {
+    display: none;
   }
 }

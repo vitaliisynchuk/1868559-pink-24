@@ -1,6 +1,9 @@
 .advertisement__header {
-  width: 280px;
-  margin: 0 auto;
+  margin-top: 29px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 39px;
+  text-align: center;
 }
 
 .advertisement__apps {
@@ -8,8 +11,11 @@
 }
 
 .advertisement__apps__wrapper {
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 280px;
+  margin: 0 auto;
 }
 
 .advertisement__title {
@@ -24,12 +30,33 @@
   text-decoration: none;
   color: @primary-color;
   font-weight: 700;
+  padding: 11px 19px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
+  margin-top: 28px;
+  margin-bottom: 38px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &:hover {
+    background: #ffffff;
+    color: @principal-red-color;
+  }
+
+  &:active {
+    background: #ffffff;
+    color: fade(@principal-red-color, 30%);
+  }
 }
 
 .advertisement__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
 }
 
 .advertisement__link {
@@ -39,24 +66,57 @@
   line-height: 18px;
 }
 
+.advertisement__icon {
+  padding-right: 17px;
+  padding-left: 17px;
+  margin: 0;
+
+  &--apple {
+    padding-left: 0;
+    fill: #ffffff;
+  }
+
+  &--android {
+    fill: #a4c639;
+  }
+}
+
 .advertisement__legend {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: @primary-color;
   margin: 0;
-  justify-self: center;
+  text-align: center;
+  margin-bottom: 38px;
 }
 
 // TABLET RULES
 
 @media (min-width: @tablet-width) {
+  .advertisement__wrapper {
+    margin-left: 20px;
+    margin-top: 102px;
+    margin-bottom: 119px;
+  }
+
   .advertisement__header {
     width: 300px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  .advertisement__button {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 39px;
+    margin-bottom: 46px;
+  }
+
+  .advertisement__list {
+    margin-bottom: 42px;
   }
 
   .advertisement__apps {
@@ -64,11 +124,19 @@
   }
 
   .advertisement__apps__wrapper {
-    margin: 0 auto;
+    margin: 0;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  .apple-icon {
+    padding-left: 0;
+  }
+
+  .advertisement__legend {
+    margin-bottom: 0;
   }
 }
 
@@ -76,8 +144,7 @@
 
 @media (min-width: @desktop-width) {
   .advertisement__header {
-    width: 300px;
-    margin: 0 auto;
+    width: 224px;
   }
 
   .advertisement__apps {
@@ -85,7 +152,6 @@
   }
 
   .advertisement__apps__wrapper {
-    margin: 0 auto;
     width: 300px;
   }
 }
