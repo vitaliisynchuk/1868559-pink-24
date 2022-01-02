@@ -5,9 +5,15 @@
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 172px;
   margin: 0 auto;
   justify-content: center;
+}
+
+.footer__logo-image {
+  padding-bottom: 41px;
 }
 
 // TABLET RULES
@@ -15,6 +21,10 @@
 @media (min-width: @tablet-width) {
   .footer__wrapper {
     width: 620px;
+  }
+
+  .footer__logo-image {
+    padding-bottom: 0;
   }
 
   .footer__social {

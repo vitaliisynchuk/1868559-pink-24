@@ -3,8 +3,7 @@
 }
 
 .communication__wrapper {
-  width: 222px;
-  margin: 0 auto;
+  padding-top: 47px;
 }
 
 .communication__title {
@@ -13,9 +12,13 @@
   line-height: @h2-mobile-height;
   color: @text-color;
   margin: 0;
+  text-align: center;
+  padding-bottom: 45px;
 }
 
 .communication__list {
+  width: 222px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -23,6 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .communication__item-title {
@@ -31,13 +35,31 @@
   line-height: 25px;
   color: @text-color;
   margin: 0;
+  padding-bottom: 13px;
 }
 
 .communication__item-content {
+  padding-bottom: 31px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: @principal-red-color;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: fade(#283645, 30%);
+  }
+}
+
+.communication__map {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 200px;
 }
 
 // TABLET RULES
@@ -46,11 +68,13 @@
   .communication__wrapper {
     width: auto;
     margin: 0 auto;
+    padding-top: 55px;
   }
 
   .communication__title {
     margin: 0 auto;
     width: 370px;
+    padding-bottom: 51px;
   }
 
   .communication__list {
@@ -67,17 +91,34 @@
     margin: 0 auto;
   }
 
+  .communication__item-title {
+    padding-bottom: 17px;
+  }
+
   .communication__item:first-child {
     margin-right: 90px;
   }
 
+  .communication__item-content {
+    padding-bottom: 55px;
+  }
+
+  .communication__map {
+    width: 660px;
+    height: 374px;
+  }
 }
 
 // DESKTOP RULES
 
 @media (min-width: @desktop-width) {
+  .communication__wrapper {
+    padding-top: 74px;
+  }
+
   .communication__title {
     width: 462px;
+    padding-bottom: 61px;
   }
 
   .communication__list {
@@ -86,5 +127,18 @@
 
   .communication__item:first-child {
     margin-right: auto;
+  }
+
+  .communication__item-title {
+    padding-bottom: 34px;
+  }
+
+  .communication__item-content {
+    padding-bottom: 39px;
+  }
+
+  .communication__map {
+    width: 1200px;
+    height: 502px;
   }
 }

@@ -8,8 +8,8 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="body">
-    <div class="main-background-container">
-      <header class="header">
+    <!-- <div class="main-background-container"> -->
+      <header class="header header--closed header--nojs">
         <div class="header__wrapper">
           <a class="header__logo">
             <svg class="header__logo-image" aria-hidden="true" focusable="false" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
@@ -23,37 +23,45 @@
             1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/>
             </svg>
           </a>
-          <nav class="main-navigation">
-            <button class="main-navigation__toogle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-navigation__wrapper">
-              <ul class="navigation-list">
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#">
-                    Главная
-                  </a>
-                </li>
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="catalog.html">
-                    Фотографии
-                  </a>
-                </li>
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="form.html">
-                    Конкурс
-                  </a>
-                </li>
-                <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#">
-                    HTML Academy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>  
+          <button class="header__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-navigation">
+          <div class="main-navigation__wrapper">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="navigation-list__item navigation-list__item--current">
+                <a class="navigation-list__link" href="#">
+                  Конкурс
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
+      <main class="main">
+        <h1 class="visually-hidden">Пинк - улучши своё настроение</h1>
+          <section class="advertisement">
+            <div class="advertisement__wrapper">
+              <header class="advertisement__header">
+                <h2 class="advertisement__title">Взгляните на жизнь<br>
+                  иначе!</h2>
+              </header>
       <main class="main">
         <h1 class="visually-hidden">Конкурс</h1>
         <section class="filter">
@@ -61,7 +69,7 @@
             <h2 class="filter__title">Конкурс на самое безбашенное
               путешествие с Пинк</h2>
           </header>
-    </div>
+    <!-- </div> -->
           <div class="filter__wrapper">
             <p class="filter__text">Поделитесь своей историей и получите
               шанс выиграть ценный приз — 1000
@@ -223,7 +231,23 @@
               </svg>
             </a>
           </div>
-        </div>  
+        </div>
       </footer>
+      <script>
+        var header = document.querySelector('.header');
+        var headerToggle = document.querySelector('.header__toogle');
+
+        header.classList.remove('header--nojs');
+
+        headerToggle.addEventListener('click', function() {
+          if (header.classList.contains('header--closed')) {
+            header.classList.remove('header--closed');
+            header.classList.add('header--opened');
+          } else {
+            header.classList.add('header--closed');
+            header.classList.remove('header--opened');
+          }
+        });
+      </script>
   </body>
 </html>

@@ -1,9 +1,24 @@
 .copyright {
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.copyright__icon {
+  fill: @principal-red-color;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: fade(#283645, 30%);
+  }
 }

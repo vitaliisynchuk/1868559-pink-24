@@ -1,0 +1,57 @@
+.mobile-table {
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 100px;
+  padding-bottom: 45px;
+}
+
+.mobile-table__cell {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
+  color: @text-color;
+  width: 239px;
+  display: flex;
+}
+
+.mobile-table__row {
+  width: 276px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  &--special {
+    background-color: #283645;
+    width: 276px;
+    height: 94px;
+  }
+}
+
+.mobile-table__cell-name {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
+  font-weight: 700;
+  color: @primary-color;
+  display: block;
+}
+
+.mobile-table__cell-price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: @primary-color;
+  display: block;
+}
+
+.mobile-table__icon {
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .mobile-table {
+    display: none;
+  }
+}
