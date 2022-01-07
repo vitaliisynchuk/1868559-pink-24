@@ -1,10 +1,18 @@
 .header {
-  background-color: fade(#000000, 30%);
+  // background-color: fade(#000000, 30%);
+  background-color: #202638;
+  background-image: url("/img/background/index-background-mobile.png");
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/background/index-backgorund-mobile@2x.png");
+  }
 }
 
 .header--opened {
   background-color: #283645;
   box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  background-image: none;
 }
 
 .header--closed .header__toogle::before {
@@ -17,9 +25,10 @@
   height: 2px;
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  background-image: none;
 }
 
-.header--closed  {
+.header--closed {
   .header__toogle:hover::before {
     background-color: @principal-red-color;
     box-shadow:
@@ -73,6 +82,20 @@
   }
 }
 
+.header--nojs {
+  background-color: #283645;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  background-image: none;
+
+  .header--opened {
+    display: block;
+  }
+
+  .header__toogle {
+    display: none;
+  }
+}
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +116,7 @@
   height: 69px;
   cursor: pointer;
   border: none;
-  background-color:#00000000;;
+  background-color: #00000000;
   margin: 0;
   padding: 0;
   margin-right: 20px;
@@ -102,6 +125,18 @@
 // TABLET RULES
 
 @media (min-width: @tablet-width) {
+  .header {
+    background-image: url("/img/background/index-background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/index-background-tablet@2x.png");
+    }
+  }
+
+  .header--opened {
+    background-image: none;
+  }
+
   .header__wrapper {
     display: flex;
     min-height: 110px;
@@ -127,6 +162,20 @@
       top: 54px;
     }
   }
+
+  .header--nojs {
+    background-color: #283645;
+    box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+    background-image: none;
+  
+    .header--opened {
+      display: block;
+    }
+  
+    .header__toogle {
+      display: none;
+    }
+  }
 }
 
 // DESKTOP RULES
@@ -134,6 +183,11 @@
 @media (min-width: @desktop-width) {
   .header {
     display: flex;
+    background-image: url("/img/background/index-background-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/index-background-desktop@2x.png");
+    }
   }
 
   .header__logo {

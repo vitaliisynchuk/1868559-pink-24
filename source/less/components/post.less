@@ -5,6 +5,11 @@
   width: 280px;
   margin: 0 auto;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.post:last-of-type {
+  margin-bottom: 49px;
 }
 
 .post--current {
@@ -19,11 +24,19 @@
   height: 180px;
 }
 
+.post__user-information {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 280px;
+}
+
 .post__user-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: @text-color;
+  padding-bottom: 14px;
+  padding-left: 17px;
 }
 
 .post__date {
@@ -37,7 +50,15 @@
   font-size: 14px;
   line-height: 24px;
   color: @text-color;
-  width: 280px;
+  display: block;
+  padding-bottom: 25px;
+  padding-left: 17px;
+}
+
+.post__icon {
+  fill: @principal-red-color;
+  padding-right: 18px;
+  padding-left: 17px;
 }
 
 .post__like {
@@ -53,16 +74,49 @@
     width: 300px;
   }
 
+  .post:last-of-type {
+    margin-bottom: 20px;
+  }
+
   .post__image {
     width: 300px;
     height: 300px;
+  }
+
+  .post__user-information {
+    padding-top: 30px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .post__user-name {
+    order: 1;
+  }
+
+  .post__date {
+    order: 2;
   }
 
   .post__content {
     font-size: 14px;
     line-height: 24px;
     color: @text-color;
-    width: 300px;
+    min-height: 48px;
+    width: 280px;
+    order: 3;
+  }
+
+  .post__icon {
+    order: 5;
+    padding: 0;
+  }
+
+  .post__like {
+    order: 4;
+    padding-right: 139px;
+    padding-left: 17px;
   }
 
   .post--current {
@@ -73,15 +127,22 @@
       height: 509px;
     }
 
+    .post__user-information {
+      width: 560px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
     .post__user-name {
       width: 40px;
-      order: 2;
+      order: 1;
     }
 
     .post__date {
-      order: 3;
       width: 100px;
-      margin-right: 300px;
+      padding-right: 280px;
+      order: 2;
     }
 
     .post__content {
@@ -90,8 +151,15 @@
     }
 
     .post__like {
-      order: 4;
       width: 90px;
+      order: 3;
+      padding: 0;
+      padding-right: 16px;
+    }
+
+    .post__icon {
+      order: 4;
+      padding: 0;
     }
   }
 }
@@ -111,13 +179,16 @@
       height: 506px;
     }
 
-    .post__date {
-      margin-right: 624px;
-    }
-
-    .post__content {
+    .post__user-information {
       width: 874px;
-      order: 5;
+
+      .post__date {
+        padding-right: 546px;
+      }
+
+      .post__content {
+        width: 874px;
+      }
     }
   }
 }
