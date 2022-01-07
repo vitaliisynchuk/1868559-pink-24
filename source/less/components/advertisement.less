@@ -1,13 +1,34 @@
+.advertisement {
+  background-image: url("/img/background/index-background-mobile.png");
+  background-color: #202638;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -63px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/background/index-backgorund-tablet@2x.png");
+  }
+}
+
 .advertisement__header {
-  margin-top: 29px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 39px;
+  padding-top: 29px;
+  padding-right: 20px;
+  padding-left: 20px;
+  // padding-bottom: 39px;
+  padding-bottom: 27px;
   text-align: center;
 }
 
+.advertisement__imagen {
+  display: block;
+  background-image: url("/img/mobile-screen.png");
+  background-repeat: no-repeat;
+  background-position-x: 104px;
+  background-position-y: 32px;
+}
+
 .advertisement__apps {
-  background-color: #1D2631;
+  background-color: #1d2631;
 }
 
 .advertisement__apps__wrapper {
@@ -94,14 +115,24 @@
 // TABLET RULES
 
 @media (min-width: @tablet-width) {
+  .advertisement {
+    background-image: url("/img/background/index-background-tablet.png");
+    background-position-y: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/index-backgorund-mobile@2x.png");
+    }
+  }
+
   .advertisement__wrapper {
-    margin-top: 102px;
-    margin-bottom: 119px;
+    padding-top: 102px;
+    padding-bottom: 119px;
   }
 
   .advertisement__header {
     width: 300px;
     margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -142,7 +173,15 @@
 // DESKTOP RULES
 
 @media (min-width: @desktop-width) {
-  
+  .advertisement {
+    background-image: url("/img/background/index-background-desktop.png");
+    background-position-y: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/index-background-desktop@2x.png");
+    }
+  }
+
   .advertisement__apps {
     background: none;
   }
