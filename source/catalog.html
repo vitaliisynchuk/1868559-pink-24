@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon.png">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="/img/favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="body">
@@ -56,7 +59,11 @@
               <p class="catalog__text catalog__text--top">Взгляните на фотографии, которые выкладывают пользователи!
                 Видите, как не хватает ваших?</p>
               <div class="catalog__post post post--current">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="1200" height="506" srcset="/img/catalog-desktop/anna-desktop.png 1x, /img/catalog-desktop/anna-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="660" height="509" srcset="/img/catalog-tablet/anna-tablet.png 1x, /img/catalog-tablet/anna-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/anna-mobile.png" srcset="/img/catalog-mobile/anna-mobile@2x.png 2x"  alt="фотография поста" width="320" height="137">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Анна</span>
                   <span class="post__date">(5 минут назад)</span>
@@ -73,7 +80,11 @@
                 </div>
               </div>
               <div class="catalog__post post">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="/img/catalog-desktop/levon-desktop.png 1x, /img/catalog-desktop/levon-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="/img/catalog-tablet/levon-tablet.png 1x, /img/catalog-tablet/levon-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/levon-mobile.png" srcset="/img/catalog-mobile/levon-mobile@2x.png 2x" alt="фотография поста" width="280" height="180">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Левон</span>
                   <span class="post__date">(5 часов назад)</span>
@@ -87,7 +98,11 @@
                 </div>
               </div>
               <div class="catalog__post post">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="/img/catalog-desktop/anton-desktop.png 1x, /img/catalog-desktop/anton-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="/img/catalog-tablet/anton-tablet.png 1x, /img/catalog-tablet/anton-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/anton-mobile.png" srcset="/img/catalog-mobile/anton-mobile@2x.png 2x" alt="фотография поста" width="280" height="180">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Антон</span>
                   <span class="post__date">(12 часов назад)</span>
@@ -99,7 +114,11 @@
                   </div>
               </div>
               <div class="catalog__post post">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="/img/catalog-desktop/boris-desktop.png 1x, /img/catalog-desktop/boris-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="/img/catalog-tablet/boris-tablet.png 1x, /img/catalog-tablet/boris-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/boris-mobile.png" srcset="/img/catalog-mobile/boris-mobile@2x.png 2x" alt="фотография поста" width="280" height="180">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Борис</span>
                   <span class="post__date">(20 часов назад)</span>
@@ -113,7 +132,11 @@
                 </div>
               </div>
               <div class="catalog__post post">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="/img/catalog-desktop/sergey-desktop.png 1x, /img/catalog-desktop/sergey-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="/img/catalog-tablet/sergey-tablet.png 1x, /img/catalog-tablet/sergey-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/sergey-mobile.png" srcset="/img/catalog-mobile/sergey-mobile@2x.png 2x" alt="фотография поста" width="280" height="180">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Сергей</span>
                   <span class="post__date">(25 часов назад)</span>
@@ -125,7 +148,11 @@
                 </div>
               </div>
               <div class="catalog__post post">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="/img/catalog-desktop/maxim-desktop.png 1x, /img/catalog-desktop/maxim-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="/img/catalog-tablet/maxim-tablet.png 1x, /img/catalog-tablet/maxim-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/maxim-mobile.png" srcset="/img/catalog-mobile/maxim-mobile@2x.png 2x" alt="фотография поста" width="280" height="180">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Максим</span>
                   <span class="post__date">(40 часов назад)</span>
@@ -137,7 +164,11 @@
                 </div>
               </div>
               <div class="catalog__post post">
-                <img class="post__image" src="#" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" width="300" height="400" srcset="/img/catalog-desktop/nadezda-desktop.png 1x, /img/catalog-desktop/nadezda-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" width="300" height="300" srcset="/img/catalog-tablet/nadezda-tablet.png 1x, /img/catalog-tablet/nadezda-tablet@2x.png 2x">
+                  <img class="post__image" src="/img/catalog-mobile/nadezda-mobile.png" srcset="/img/catalog-mobile/nadezda-mobile@2x.png 2x" alt="фотография поста" width="280" height="180">
+                </picture>
                 <div class="post__user-information">
                   <span class="post__user-name">Надежда</span>
                   <span class="post__date">(45 часов назад)</span>

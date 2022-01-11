@@ -6,25 +6,24 @@
   background-position-y: -63px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/background/index-backgorund-tablet@2x.png");
+    background-image: url("/img/background/index-background-mobile@2x.png");
   }
 }
 
 .advertisement__header {
   padding-top: 29px;
-  padding-right: 20px;
-  padding-left: 20px;
-  // padding-bottom: 39px;
-  padding-bottom: 27px;
+  padding-bottom: 320px;
   text-align: center;
-}
-
-.advertisement__imagen {
-  display: block;
-  background-image: url("/img/mobile-screen.png");
+  background-image: url("/img/index-mobile/mobile-phone.png");
   background-repeat: no-repeat;
-  background-position-x: 104px;
-  background-position-y: 32px;
+  width: 320px;
+  margin: 0 auto;
+  background-position: bottom;
+  background-position-x: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/index-mobile/mobile-phone@2x.png");
+  }
 }
 
 .advertisement__apps {
@@ -120,22 +119,34 @@
     background-position-y: -110px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/background/index-backgorund-mobile@2x.png");
+      background-image: url("/img/background/index-background-tablet@2x.png");
     }
   }
 
   .advertisement__wrapper {
-    padding-top: 102px;
+    padding-top: 90px;
     padding-bottom: 119px;
+    width: 620px;
+    margin: 0 auto;
+    background-image: url("/img/index-tablet/tablet-phone.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/index-tablet/tablet-phone@2x.png");
+    }
   }
 
   .advertisement__header {
     width: 300px;
-    margin: 0 auto;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    margin: 0;
+    background-image: none;
+  }
+
+  .advertisement__imagen  {
+    display: none;
   }
 
   .advertisement__button {
@@ -154,10 +165,10 @@
   }
 
   .advertisement__apps__wrapper {
-    margin: 0 auto;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
     justify-content: flex-start;
   }
 
@@ -182,6 +193,23 @@
     }
   }
 
+  .advertisement__wrapper {
+    width: 940px;
+    padding-top: 114px;
+    padding-bottom: 130px;
+    background-image: url("/img/index-desktop/desktop-phone.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/index-desktop/desktop-phone@2x.png");
+    }
+  }
+
+  .advertisement__header {
+    width: 224px;
+  }
+
   .advertisement__apps {
     background: none;
   }
@@ -189,4 +217,13 @@
   .advertisement__apps__wrapper {
     width: 300px;
   }
+
+  .advertisement__button {
+    margin-top: 51px;
+    margin-bottom: 67px;
+  }
+
+  .advertisement__list {
+    margin-bottom: 58px;
+}
 }

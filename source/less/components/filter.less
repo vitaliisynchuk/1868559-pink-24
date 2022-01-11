@@ -3,6 +3,16 @@
   margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 51px;
+  background-image: url(/img/background/index-background-mobile.png);
+  background-color: #202638;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  background-position-y: -63px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/background/index-background-mobile@2x.png");
+  }
 }
 
 .filter__wrapper {
@@ -202,7 +212,15 @@
 
 @media (min-width: @tablet-width) {
   .filter__header {
-    width: 620px;
+    padding-top: 81px;
+    padding-bottom: 143px;
+    background-image: url(/img/background/index-background-tablet.png);
+    background-position-y: -110px;
+    width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/index-background-tablet@2x.png");
+    }
   }
 
   .filter__form {
@@ -380,7 +398,12 @@
 
 @media (min-width: @desktop-width) {
   .filter__header {
-    width: 747px;
+    background-image: url(/img/background/index-background-desktop.png);
+    background-position-y: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/index-background-desktop@2x.png");
+    }
   }
 
   .filter__text {
