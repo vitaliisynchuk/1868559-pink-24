@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon.png">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="body">
@@ -12,7 +15,11 @@
       <header class="header header--closed header--nojs">
         <div class="header__wrapper">
           <a class="header__logo">
-            <img class="header__logo-image" src="./img/icon/pink-logo.svg" height="23" width="74">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/icon/pink-header-logo-desktop.svg" height="40" width="147">
+              <source media="(min-width: 660px)" srcset="img/icon/pink-header-logo-tablet.svg" height="40" width="145">
+              <img class="header__logo-image" src="img/icon/pink-logo.svg" height="23" width="74">
+            </picture>
           </a>
           <button class="header__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
