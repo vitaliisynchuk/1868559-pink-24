@@ -5,15 +5,33 @@
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
+  width: 320px;
+  padding-top: 37px;
   padding-bottom: 40px;
-  width: 172px;
   margin: 0 auto;
   justify-content: center;
 }
 
+.footer__logo {
+  padding-bottom: 51px;
+  width: 145px;
+}
+
 .footer__logo-image {
-  padding-bottom: 41px;
+  fill: #283645;
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover {
+    fill: @principal-red-color;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }
 
 // TABLET RULES
@@ -37,5 +55,15 @@
 @media (min-width: @desktop-width) {
   .footer__wrapper {
     width: 940px;
+  }
+
+  .footer__logo-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
