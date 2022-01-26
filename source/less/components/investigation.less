@@ -10,8 +10,8 @@
 
 .investigation__title {
   font-weight: @h3-mobile-weight;
-  font-size: @h3-mobile-size;
-  line-height: @h3-mobile-height;
+  font-size: 30px;
+  line-height: 36px;
   margin: 0;
   grid-area: title;
 }
@@ -40,20 +40,20 @@
   .investigation__wrapper {
     width: 620px;
     margin: 0 auto;
-    padding-top: 54px;
-    padding-bottom: 109px;
+    padding-top: 47px;
+    padding-bottom: 49px;
     display: grid;
     grid-template-columns: 238px 72px 310px;
     grid-template-rows: 40px 59px 24px 82px 24px 10px 37px;
     grid-template-areas:
-    "image . ."
-    "image . title"
-    "image . ."
-    "image . description"
-    "image . ."
-    "image . legend"
-    "image . .";
- }
+      "image . ."
+      "image . title"
+      "image . ."
+      "image . description"
+      "image . ."
+      "image . legend"
+      "image . .";
+  }
 }
 
 // DESKTOP RULES
@@ -66,18 +66,32 @@
   .investigation__wrapper {
     width: 930px;
     margin: 0 auto;
-    padding-bottom: 67px;
-    padding-top: 17px;
+    padding-bottom: 45px;
+    padding-top: 1px;
     display: grid;
-    grid-template-columns: 298px 71px 537px;
-    grid-template-rows: 52px 33px 37px 74px 47px 13px 52px;
+    grid-template-columns: 293px 71px 537px;
+    grid-template-rows: 94px 33px 22px 92px 28px 32px 65px;
     grid-template-areas:
-    "image . ."
-    "image . title"
-    "image . ."
-    "image . description"
-    "image . ."
-    "image . legend"
-    "image . .";
- }
+      "image . ."
+      "image . title"
+      "image . ."
+      "image . description"
+      "image . ."
+      "image . legend"
+      "image . .";
+  }
+
+  .investigation__title {
+    line-height: 30px;
+  }
+
+  .investigation__description {
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height-2;
+  }
+
+  .investigation__legend {
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height-2;
+  }
 }

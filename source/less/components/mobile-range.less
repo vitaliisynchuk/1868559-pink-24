@@ -1,0 +1,83 @@
+.mobile-range {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 20px;
+}
+
+.mobile-range__scale {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-range__efects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 39px;
+  margin-top: 22px;
+  margin-right: 12px;
+}
+
+.mobile-range__icon {
+  fill: #283645;
+  opacity: 0.3;
+  margin-right: 18px;
+  margin-left: 18px;
+
+  &--current {
+    fill: @principal-red-color;
+    opacity: 10;
+  }
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.mobile-range__bar {
+  position: relative;
+  height: 2px;
+  width: 240px;
+  margin-bottom: 34px;
+  background-color: #283645;
+  border-radius: 2px;
+}
+
+.mobile-range__toggle {
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  background: #ffffff;
+  border: 2px solid @principal-red-color;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -8px;
+  left: 192px;
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .mobile-range {
+    display: none;
+  }
+}
