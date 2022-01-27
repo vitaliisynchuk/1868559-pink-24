@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   align-items: center;
+  width: 130px;
 }
 
 .copyright__text {
@@ -20,5 +21,15 @@
 
   &:active {
     fill: fade(#283645, 30%);
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .copyright {
+    width: 155px;
+  }
+
+  .copyright__text {
+    font-size: @text-mobile-size-2;
   }
 }

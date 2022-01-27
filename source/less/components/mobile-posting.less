@@ -1,0 +1,75 @@
+.mobile-posting__buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  &::before {
+    width: 100%;
+    height: 1px;
+    background-color: #283645;
+    opacity: 0.1;
+    content: "";
+    position: relative;
+  }
+}
+
+.mobile-posting__buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 41px;
+}
+
+.mobile-posting__button {
+  &--upload {
+    color: @principal-red-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px 90px;
+    border: 3px solid @principal-red-color;
+    border-radius: 29px;
+    margin-bottom: 12px;
+
+    &:hover {
+      background-color: @principal-red-color;
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: @principal-red-color;
+      color: fade(#ffffff, 30%);
+    }
+  }
+
+  &--cancel {
+    color: #283645;
+    opacity: 0.1;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px 103px;
+    border: 3px solid #283645;
+    border-radius: 29px;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: #283645;
+      opacity: 0.3;
+      color: #ffffff;
+    }
+  }
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .mobile-posting__buttons {
+    display: none;
+  }
+}

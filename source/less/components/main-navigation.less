@@ -14,11 +14,11 @@
 
 .navigation-list__item {
   text-align: center;
-  padding: 24px;
-  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  padding: 16px;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-@media (max-width: 1198px) {
+@media (max-width: 1200px) {
   .header--closed .navigation-list__item {
     display: none;
   }
@@ -30,13 +30,14 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  text-transform: uppercase;
 }
 
 // DESKTOP RULES
 
 @media (min-width: @desktop-width) {
   .main-navigation {
-    background-color: #00000000;;
+    background-color: #00000000;
     margin-left: auto;
     margin-right: 130px;
   }
@@ -65,15 +66,14 @@
     }
   }
 
-  .navigation-list__item:nth-child(4n) {
-    .navigation-list__link {
-      padding-right: 0;
-    }
-  }
-
   .navigation-list__link {
     display: block;
-    padding: 41px 40px;
+    padding: 47px 21px;
+    width: 132px;
+    text-transform: initial;
+    font-weight: 400;
+    font-size: @text-mobile-size-2;
+    line-height: 18px;
 
     &:hover {
       color: @principal-red-color;

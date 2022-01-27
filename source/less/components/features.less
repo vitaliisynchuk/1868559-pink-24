@@ -1,5 +1,9 @@
 .features__header {
   background-color: @primary-color;
+  background-image: linear-gradient(
+  174deg,
+  transparent 85%,
+  #f2f2f2 15%);
 }
 
 .features__header__wrapper {
@@ -7,13 +11,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 46px;
-  padding-bottom: 70px;
+  padding-top: 41px;
+  padding-bottom: 74px;
   margin: 0 auto;
 }
 
 .features__main {
-   background-color: @secondary-background-color;
+  background-color: @secondary-background-color;
 }
 
 .features__title {
@@ -22,10 +26,11 @@
   line-height: @h2-mobile-height;
   margin: 0;
   text-align: center;
+  color: @text-color;
 }
 
 .features__title:first-child {
-  margin-bottom: 42px;
+  margin-bottom: 29px;
 }
 
 .features__phone-list {
@@ -37,13 +42,13 @@
   padding: 0;
   margin: 0 auto;
   padding-bottom: 4px;
-  padding-top: 53px;
+  padding-top: 40px;
   width: 280px;
   text-align: center;
 }
 
 .features__item {
-  margin-bottom: 43px;
+  margin-bottom: 31px;
 }
 
 .features__item:nth-child(3) {
@@ -52,10 +57,10 @@
 
 .features__item-title {
   font-weight: @h3-mobile-weight;
-  font-size: @h3-mobile-size;
-  line-height: @h3-mobile-height;
+  font-size: @text-mobile-size-2;
+  line-height: @text-mobile-height;
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 
 .features__item-description {
@@ -68,22 +73,33 @@
   margin: 0 auto;
   display: block;
   position: relative;
-  top: 44px;
+  top: 36px;
+  margin-bottom: -9px;
 }
 
 // TABLET RULES
 
 @media (min-width: @tablet-width) {
+  .features__header {
+    background-image: linear-gradient(175deg, transparent 80%, #f2f2f2 20%);
+  }
+
   .features__header__wrapper {
     margin: 0 auto;
     width: 588px;
-    padding-top: 58px;
+    padding-top: 48px;
+    padding-bottom: 102px;
   }
 
   .features__main-wrapper {
     display: flex;
     width: 620px;
     margin: 0 auto;
+  }
+
+  .features__title {
+    font-size: 40px;
+    line-height: 54px;
   }
 
   .features__title:first-child {
@@ -99,37 +115,56 @@
     text-align: left;
     margin: 0;
     padding: 0;
-    padding-top: 49px;
+    padding-top: 2px;
     padding-bottom: 49px;
     order: 2;
     padding-left: 310px;
   }
 
-  .features__item-description {
-    padding-bottom: 47px;
+  .features__item {
+    margin-bottom: 35px;
   }
 
   .features__image {
     display: block;
     position: absolute;
-    top: 923px;
+    top: 975px;
   }
 }
 
 // DESKTOP RULES
 
 @media (min-width: @desktop-width) {
+  .features__header {
+    background-image: linear-gradient(
+      175deg,
+      transparent 70%,
+    #f2f2f2 30%);
+  }
+
   .features__header__wrapper {
     margin: 0 auto;
     width: 780px;
+    padding-top: 62px;
+    padding-bottom: 214px;
+  }
+
+  .features__title {
+    font-size: 50px;
+    line-height: 68px;
   }
 
   .features__title:first-child {
     width: 780px;
   }
-  
+
+  .features__title:nth-child(2) {
+    width: 420px;
+  }
+
   .features__main-wrapper {
     width: 940px;
+    height: 411px;
     flex-wrap: wrap;
     margin: 0 auto;
     padding-bottom: 59px;
@@ -146,42 +181,53 @@
     z-index: 2;
     background-color: #f2f2f2;
     padding-top: 59px;
+    top: -245px;
   }
 
   .features__item {
-    width: 182px;
-    margin-right: 78px;
     margin-bottom: 0;
     width: 300px;
-    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .features__item:last-child {
-    margin-right: 0;
+  .features__item:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .features__item-title {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    width: 225px;
   }
 
   .features__image {
-    display: none;  
+    display: none;
+  }
+
+  .features__item-description {
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height-2;
+    width: 249px;
+    display: block;
   }
 
   .features__phone-list {
     display: flex;
-    width: 940px;
+    width: 961px;
     margin: 0 auto;
     list-style: none;
     padding: 0;
     justify-content: center;
     position: relative;
     z-index: 1;
-    top: 82px;
-    margin-top: -83px;
+    top: -157px;
   }
 
   .phone-item {
-    width: 300px;
+    width: 325px;
   }
 }

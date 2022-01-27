@@ -1,12 +1,116 @@
 .posting {
-  background-color: @primary-color;
+  background-color: #ffffff;
 }
 
 .posting__wrapper {
-  display: flex;
-  justify-content: center;
+  background-color: #f2f2f2;
 }
 
-.posting__form {
-  background-color: @secondary-background-color;
+// ONLY MOBILE WIDTH
+
+@media (max-width: @mobile-width-only) {
+  .posting__image {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .posting__buttons {
+    display: none;
+  }
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .posting__form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 43px;
+  }
+
+  .posting__buttons-wrapper {
+    padding-top: 41px;
+  }
+
+  .posting__button {
+    cursor: pointer;
+
+    &--upload {
+      color: @principal-red-color;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      padding: 15px 81px;
+      border: 3px solid @principal-red-color;
+      border-radius: 29px;
+      margin-bottom: 26px;
+
+      &:hover {
+        background-color: @principal-red-color;
+        color: #ffffff;
+      }
+
+      &:active {
+        background-color: @principal-red-color;
+        color: fade(#ffffff, 30%);
+      }
+    }
+
+    &--cancel {
+      color: #283645;
+      opacity: 0.1;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      padding: 15px 93px;
+      border: 3px solid #283645;
+      border-radius: 29px;
+
+      &:hover {
+        opacity: 0.3;
+      }
+
+      &:active {
+        background-color: #283645;
+        opacity: 0.3;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .posting__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .posting__form {
+    width: 780px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+
+  .posting__buttons-wrapper {
+    padding-top: 139px;
+    padding-left: 21px;
+    width: 429px;
+  }
+
+  .posting__button {
+    &--upload {
+      padding: 15px 42px;
+      margin-right: 40px;
+    }
+
+    &--cancel {
+      padding: 15px 55px;
+    }
+  }
 }

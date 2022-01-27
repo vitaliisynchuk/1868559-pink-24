@@ -1,7 +1,7 @@
 .table-slider {
-  padding-bottom: 50px;
+  padding-bottom: 41px;
   margin: 0 auto;
-  width: 80px;
+  width: 60px;
 }
 
 // ONLY MOBILE
@@ -16,42 +16,70 @@
 
 @media (min-width: @tablet-width) {
   .table {
-    padding-top: 100px;
+    padding-top: 39px;
     padding-bottom: 70px;
+    border-collapse: collapse;
   }
 
   .table__cell {
     width: 152px;
-    height: 45px;
+    height: 43px;
     text-align: center;
     background-color: #ffffff;
+    font-size: @text-mobile-size;
+    line-height: @text-mobile-height;
+    color: @text-color;
+    border: 2px solid #e5e5e5;
+
     &--special {
-        background-color: #283645;
-        width: 152px;
-        height: 75px;
+      background-color: #283645;
+      width: 152px;
+      height: 75px;
+      border-left: 2px solid #f2f2f2;
     }
   }
 
+  .table__cell:nth-of-type(1) {
+    text-align: start;
+  }
+
+  .table__cell-wrapper {
+    &--special {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
+  }
+
+  .table__cell-icon {
+    position: absolute;
+    left: -2px;
+    top: -8px;
+  }
+
   .table__cell-name {
-    font-size: @text-mobile-size;
-    line-height: @text-mobile-height;
+    font-size: 16px;
+    line-height: @text-mobile-height-2;
     font-weight: 700;
     color: @primary-color;
     display: block;
+    width: 100px;
+    padding-top: 3px;
   }
 
   .table__cell-price {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height-2;
     color: @primary-color;
     display: block;
   }
 
-  .table__cell {
+  .table__span {
     font-size: @text-mobile-size;
     line-height: @text-mobile-height;
-    color: @text-color;
+    padding-left: 12px;
   }
 
   .table-slider {
@@ -64,11 +92,39 @@
 @media (min-width: @desktop-width) {
   .table__cell {
     width: 234px;
-    height: 59px;
+    height: 56px;
+
     &--special {
-        background-color: #283645;
-        width: 233px;
-        height: 94px;
+      background-color: #283645;
+      width: 233px;
+      height: 94px;
     }
+  }
+
+  .table__cell-wrapper {
+    &--special {
+      margin-bottom: 9px;
+    }
+  }
+
+  .table__cell-icon {
+    top: -15px;
+  }
+
+  .table__cell-name {
+    font-size: @text-mobile-size-2;
+    width: 160px;
+    padding: 0;
+    padding-bottom: 2px;
+  }
+
+  .table__cell-price {
+    font-size: 24px;
+    line-height: @text-mobile-height-2;
+  }
+
+  .table__span {
+    font-size: @text-mobile-size-2;
+    padding-left: 20px;
   }
 }
