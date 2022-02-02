@@ -21,7 +21,8 @@
     border-collapse: collapse;
   }
 
-  .table__cell {
+  .table__cell,
+  .table__cell-special {
     width: 152px;
     height: 43px;
     text-align: center;
@@ -30,26 +31,24 @@
     line-height: @text-mobile-height;
     color: @text-color;
     border: 2px solid #e5e5e5;
-
-    &--special {
-      background-color: #283645;
-      width: 152px;
-      height: 75px;
-      border-left: 2px solid #f2f2f2;
-    }
   }
 
   .table__cell:nth-of-type(1) {
     text-align: start;
   }
 
-  .table__cell-wrapper {
-    &--special {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      position: relative;
-    }
+  .table__cell-special {
+    background-color: #283645;
+    width: 152px;
+    height: 75px;
+    border-left: 2px solid #f2f2f2;
+  }
+
+  .table__cell-wrapper-special {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
   }
 
   .table__cell-icon {
@@ -93,22 +92,22 @@
   .table__cell {
     width: 234px;
     height: 56px;
-
-    &--special {
-      background-color: #283645;
-      width: 233px;
-      height: 94px;
-    }
   }
 
-  .table__cell-wrapper {
-    &--special {
-      margin-bottom: 9px;
-    }
+  .table__cell-special {
+    background-color: #283645;
+    width: 233px;
+    height: 94px;
+  }
+
+  .table__cell-wrapper-special {
+    margin-bottom: 9px;
   }
 
   .table__cell-icon {
     top: -15px;
+    width: 74px;
+    height: 74px;
   }
 
   .table__cell-name {

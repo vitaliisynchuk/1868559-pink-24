@@ -1,5 +1,4 @@
 .header {
-  // background-color: fade(#000000, 30%);
   background-color: #202638;
   background-image: url("../img/background/index-background-mobile.png");
   background-size: 100%;
@@ -29,6 +28,10 @@
 }
 
 .header--closed {
+  .header__toggle {
+    display: block;
+  }
+
   .header__toggle:hover::before {
     background-color: @principal-red-color;
     box-shadow:
@@ -48,7 +51,7 @@
   top: 0;
   right: auto;
   left: 0;
-  background-color: #283645;
+  display: block;
 
   &::before,
   &::after {
@@ -83,14 +86,6 @@
 }
 
 .header--nojs {
-  background-color: #283645;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  background-image: none;
-
-  .header--opened {
-    display: block;
-  }
-
   .header__toggle {
     display: none;
   }
@@ -133,15 +128,20 @@
 }
 
 .header__toggle {
-  display: block;
+  display: none;
   width: 70px;
   height: 69px;
   cursor: pointer;
   border: none;
-  background-color: #00000000;
   margin: 0;
   padding: 0;
+  background-color: transparent;
+
+  &--opened {
+    display: block;
+  }
 }
+
 
 // TABLET RULES
 
@@ -224,10 +224,23 @@
     }
   }
 
+  .header--opened {
+    .header__wrapper {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  .header--closed {
+    .header__toggle {
+      display: none;
+    }
+  }
+
   .header__container {
     width: 100%;
     display: flex;
-    background-color: rgba(0,0,0,.3);
+    background-color: fade(#000000, 30%);
   }
 
   .header__wrapper {
@@ -248,9 +261,7 @@
     &--desktop {
       display: block;
     }
-  }
 
-  .pink-logo {
     &--stars {
       fill: @principal-red-color;
     }
