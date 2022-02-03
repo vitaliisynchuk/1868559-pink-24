@@ -1,0 +1,96 @@
+.mobile-table {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 34px;
+  position: relative;
+  width: 828px;
+  right: 254px;
+}
+
+
+.mobile-table__cell,
+.mobile-table__cell-special {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
+  color: @text-color;
+  width: 239px;
+}
+
+.mobile-table__cell-special {
+  vertical-align: top;
+}
+
+
+.mobile-table__cell-wrapper,
+.mobile-table__cell-wrapper-special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-table__cell-wrapper-special {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  position: relative;
+}
+
+.mobile-table__row,
+.mobile-table__row-special {
+  width: 276px;
+  height: 59px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.mobile-table__row-special {
+  background-color: #283645;
+  width: 276px;
+  height: 94px;
+}
+
+.mobile-table__cell-icon {
+  position: absolute;
+  left: -6px;
+  top: -9px;
+}
+
+.mobile-table__cell-name {
+  font-size: 16px;
+  line-height: @text-mobile-height-2;
+  font-weight: 700;
+  color: @primary-color;
+  display: block;
+  width: 270px;
+}
+
+.mobile-table__cell-price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: @text-mobile-height-2;
+  color: @primary-color;
+  display: block;
+  width: 270px;
+}
+
+.mobile-table__span {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height-2;
+  text-transform: uppercase;
+  margin-left: 17px;
+  margin-bottom: 1px;
+}
+
+.mobile-table__icon {
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .mobile-table {
+    display: none;
+  }
+}

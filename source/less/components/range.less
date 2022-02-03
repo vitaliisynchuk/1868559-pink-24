@@ -1,0 +1,166 @@
+// ONLY MOBILE WIDTH
+
+@media (max-width: @mobile-width-only) {
+  .range {
+    display: none;
+  }
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .range {
+    width: 275px;
+    padding-left: 45px;
+    padding-top: 8px;
+  }
+
+  .range__scale {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+    position: relative;
+
+    &::after {
+      width: 275px;
+      height: 2px;
+      background-color: #283645;
+      opacity: 0.1;
+      content: "";
+      position: absolute;
+      top: 43px;
+    }
+  }
+
+  .range__icon {
+    fill: @principal-red-color;
+
+    &--crop {
+      width: 29px;
+      height: 22px;
+      margin-right: 26px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+      margin-right: 31px;
+    }
+
+    &--contrast {
+      width: 30px;
+      height: 16px;
+      margin-right: 25px;
+    }
+  }
+
+  .range__bar {
+    position: relative;
+    height: 2px;
+    width: 202px;
+    background-color: #283645;
+    border-radius: 2px;
+  }
+
+  .range__toggle {
+    position: absolute;
+    width: 14px;
+    height: 17px;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -8px;
+    left: 192px;
+
+    &:active {
+      background-color: #d22856;
+    }
+
+    &--crop {
+      left: 159px;
+    }
+
+    &--fill {
+      left: 24px;
+    }
+
+    &--contrast {
+      left: 95px;
+    }
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .range {
+    width: 410px;
+    padding-left: 70px;
+    padding-top: 0;
+  }
+
+  .range__scale {
+    margin-bottom: 30px;
+
+    &::after {
+      width: 410px;
+      top: 56px;
+      left: 22px;
+    }
+  }
+
+  .range__scale:nth-child(3) {
+    &::after {
+      display: none;
+    }
+  }
+
+  .range__icon {
+    fill: @principal-red-color;
+
+    &--current {
+      fill: @principal-red-color;
+      opacity: 10;
+    }
+
+    &--crop {
+      width: 44px;
+      height: 44px;
+      margin-right: 47px;
+      margin-left: 21px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+      margin-right: 43px;
+      margin-left: 22px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+      margin-right: 54px;
+      margin-left: 27px;
+    }
+  }
+
+  .range__bar {
+    width: 288px;
+  }
+
+  .range__toggle {
+    &--crop {
+      left: 234px;
+    }
+
+    &--fill {
+      left: 34px;
+    }
+
+    &--contrast {
+      left: 135px;
+    }
+  }
+}

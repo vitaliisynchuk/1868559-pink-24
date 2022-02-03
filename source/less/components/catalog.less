@@ -1,0 +1,135 @@
+.catalog__header {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 77px;
+  background-image: url("../img/background/index-background-mobile.png");
+  background-color: #202638;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  background-position-y: -63px;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/index-background-mobile@2x.png");
+  }
+}
+
+.catalog__title {
+  font-weight: @h2-mobile-weight;
+  font-size: @h2-mobile-size;
+  line-height: 33px;
+  color: @primary-color;
+  width: 172px;
+  margin: 0 auto;
+}
+
+.catalog__background {
+  background-color: @primary-color;
+}
+
+.catalog__text {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height-2;
+  color: @text-color;
+  margin: 0 auto;
+  text-align: center;
+
+  &--top {
+    padding-top: 44px;
+    padding-bottom: 50px;
+    width: 250px;
+  }
+
+  &--bottom {
+    padding-bottom: 41px;
+    width: 250px;
+  }
+}
+
+.catalog__link {
+  cursor: pointer;
+}
+
+.catalog__post {
+  background-color: @secondary-background-color;
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .catalog__header {
+    padding-top: 67px;
+    padding-bottom: 127px;
+    background-image: url("../img/background/index-background-tablet.png");
+    background-position-y: -110px;
+    width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/index-background-tablet@2x.png");
+    }
+  }
+
+  .catalog__title {
+    font-size: 50px;
+    line-height: 68px;
+    width: 360px;
+  }
+
+  .catalog__text {
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height-2;
+
+    &--top {
+      width: 560px;
+      padding-top: 91px;
+      padding-bottom: 78px;
+    }
+
+    &--bottom {
+      width: 430px;
+      padding-top: 46px;
+      padding-bottom: 70px;
+    }
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 641px;
+    margin: 0 auto;
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .catalog__header {
+    background-image: url("../img/background/index-background-desktop.png");
+    background-position-y: -110px;
+    padding-top: 59px;
+    padding-bottom: 89px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/index-background-desktop@2x.png");
+    }
+  }
+
+  .catalog__text {
+    width: 572px;
+
+    &--top {
+      padding-bottom: 89px;
+    }
+
+    &--bottom {
+      padding-top: 4px;
+      padding-bottom: 67px;
+    }
+  }
+
+  .catalog__wrapper {
+    width: 960px;
+  }
+}

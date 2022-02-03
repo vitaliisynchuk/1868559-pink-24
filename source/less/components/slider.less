@@ -1,0 +1,25 @@
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  background-color: #283645;
+  border: none;
+  border-radius: 6px;
+  opacity: 0.3;
+
+  &--current {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #283645;
+    opacity: 10;
+  }
+
+  &:hover {
+    background-color: #283645;
+    opacity: 0.6;
+  }
+}
+
+.slider__toggle:nth-child(2) {
+  margin-left: 16px;
+  margin-right: 16px;
+}

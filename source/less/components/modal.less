@@ -1,0 +1,242 @@
+.modal__wrapper {
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &--error {
+    display: none;
+    top: 1166px;
+    height: 289px;
+  }
+
+  &--success {
+    display: none;
+    top: 1638px;
+  }
+}
+
+.modal__window {
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  min-width: 320px;
+}
+
+.modal__window-title {
+  font-size: @text-mobile-size-2;
+  line-height: @text-mobile-height;
+  margin: 0;
+
+  &--error {
+    padding-bottom: 25px;
+    padding-top: 38px;
+  }
+
+  &--success {
+    padding-bottom: 25px;
+    padding-top: 41px;
+  }
+}
+
+.modal__window-content {
+  font-size: @text-mobile-size;
+  line-height: @text-mobile-height;
+  margin: 0;
+
+  &--error {
+    padding-bottom: 41px;
+  }
+
+  &--success {
+    padding-bottom: 33px;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.modal__button-wrapper {
+  &--success {
+    padding-bottom: 52px;
+    padding-top: 52px;
+    background-color: #f2f2f2;
+  }
+}
+
+.modal__button {
+  width: 276px;
+  height: 61px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30%);
+    background-color: #1c9b5e;
+  }
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .modal__wrapper {
+    &--error {
+      top: 909px;
+      height: 363px;
+    }
+
+    &--success {
+      top: 1384px;
+      height: 432px;
+    }
+  }
+
+  .modal__window {
+    width: 463px;
+    border-radius: 5px;
+  }
+
+  .modal__window-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    margin: 0 auto;
+
+    &--error {
+      padding-bottom: 21px;
+      padding-top: 41px;
+      width: 250px;
+    }
+
+    &--success {
+      padding-bottom: 21px;
+      padding-top: 41px;
+      width: 250px;
+    }
+  }
+
+  .modal__window-content {
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height;
+    margin: 0 auto;
+
+    &--error {
+      width: 300px;
+      padding-bottom: 35px;
+    }
+
+    &--success {
+      padding-bottom: 29px;
+      width: 320px;
+    }
+  }
+
+  .modal__button-wrapper {
+    &--error {
+      background-color: #ffffff;
+    }
+
+    &--success {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+  }
+
+  .modal__button {
+    width: 297px;
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .modal__wrapper {
+    height: 337px;
+
+    &--error {
+      top: 817px;
+    }
+
+    &--success {
+      top: 1276px;
+    }
+  }
+
+  .modal__window {
+    width: 780px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+  }
+
+  .modal__window-title {
+    &--error {
+      padding-bottom: 22px;
+      padding-top: 41px;
+      width: 330px;
+    }
+
+    &--success {
+      padding-bottom: 22px;
+      padding-top: 41px;
+      width: 400px;
+    }
+  }
+
+  .modal__window-content {
+    font-size: @text-mobile-size-2;
+    line-height: @text-mobile-height;
+    margin: 0 auto;
+
+    &--error {
+      width: 351px;
+      padding-bottom: 63px;
+    }
+
+    &--success {
+      width: 390px;
+      padding-bottom: 38px;
+    }
+  }
+
+  .modal__button-wrapper {
+    &--error {
+      padding-top: 52px;
+      padding-bottom: 52px;
+      background-color: #f2f2f2;
+      box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+      border-radius: 5px;
+    }
+
+    &--success {
+      padding-top: 52px;
+      padding-bottom: 52px;
+      box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+      border-radius: 5px;
+    }
+  }
+
+  .modal__button {
+    width: 297px;
+
+    &--success {
+      width: 456px;
+    }
+  }
+}

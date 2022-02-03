@@ -1,0 +1,273 @@
+.header {
+  background-color: #202638;
+  background-image: url("../img/background/index-background-mobile.png");
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/index-background-mobile@2x.png");
+  }
+}
+
+.header--opened .header__wrapper {
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  background-image: none;
+}
+
+.header--closed .header__toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  right: 20px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 11px 0 0 #ffffff, 0 22px 0 0 #ffffff;
+  background-image: none;
+}
+
+.header--closed {
+  .header__toggle {
+    display: block;
+  }
+
+  .header__toggle:hover::before {
+    background-color: @principal-red-color;
+    box-shadow:
+      0 11px 0 0 @principal-red-color,
+      0 22px 0 0 @principal-red-color;
+  }
+
+  .header__toggle:active::before {
+    background-color: fade(@principal-red-color, 30%);
+    box-shadow:
+      0 11px 0 0 fade(@principal-red-color, 30%),
+      0 22px 0 0 fade(@principal-red-color, 30%);
+  }
+}
+
+.header--opened .header__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+  display: block;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 34px;
+    width: 30px;
+    right: 17px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @principal-red-color;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@principal-red-color, 30%);
+  }
+}
+
+.header--nojs {
+  .header__toggle {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 66px;
+  background-color: fade(#000000, 30%);
+}
+
+.header__logo {
+  width: 74px;
+  height: 23px;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.header__pink-logo {
+  fill: #ffffff;
+
+  &:hover {
+    fill: @principal-red-color;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.header__toggle {
+  display: none;
+  width: 70px;
+  height: 69px;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+
+  &--opened {
+    display: block;
+  }
+}
+
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .header {
+    background-image: url("../img/background/index-background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/index-background-tablet@2x.png");
+    }
+  }
+
+  .header--opened {
+    background-image: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    min-height: 110px;
+    background-color: fade(#000000, 30%);
+  }
+
+  .header__logo {
+    margin-bottom: 15px;
+    width: 145px;
+    height: 40px;
+  }
+
+  .header__pink-logo {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .header__toggle {
+    margin-right: 10px;
+  }
+
+  .header--closed .header__toggle::before {
+    top: 42px;
+  }
+
+  .header--opened .header__toggle {
+    &::before,
+    &::after {
+      right: 17px;
+      top: 56px;
+      height: 4px;
+    }
+  }
+
+  .header--nojs {
+    background-color: #283645;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    background-image: none;
+
+    .header--opened {
+      display: block;
+    }
+
+    .header__toggle {
+      display: none;
+    }
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .header {
+    display: flex;
+    background-image: url("../img/background/index-background-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/index-background-desktop@2x.png");
+    }
+  }
+
+  .header--opened {
+    .header__wrapper {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  .header--closed {
+    .header__toggle {
+      display: none;
+    }
+  }
+
+  .header__container {
+    width: 100%;
+    display: flex;
+    background-color: fade(#000000, 30%);
+  }
+
+  .header__wrapper {
+    background: none;
+  }
+
+  .header__logo {
+    width: 147px;
+    margin-left: 130px;
+    margin-bottom: 21px;
+  }
+
+  .header__pink-logo {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+
+    &--stars {
+      fill: @principal-red-color;
+    }
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}

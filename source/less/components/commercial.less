@@ -1,0 +1,29 @@
+.commercial {
+  background-color: @secondary-background-color;
+}
+
+.commercial__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  overflow: hidden;
+}
+
+// TABLET RULES
+
+@media (min-width: @tablet-width) {
+  .commercial__wrapper {
+    width: 616px;
+    padding-top: 39px;
+    padding-bottom: 67px;
+  }
+}
+
+// DESKTOP RULES
+
+@media (min-width: @desktop-width) {
+  .commercial__wrapper {
+    width: 940px;
+    padding-top: 36px;
+    padding-bottom: 97px;
+  }
+}
